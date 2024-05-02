@@ -1,0 +1,119 @@
+		*{
+			margin: 0%;
+			padding: 0%;
+			box-sizing: border-box;
+		}
+		.body{
+		    width: 100%;
+	       height: 88vh;
+	       background-image: url(heroimg.jpg);
+	       background-repeat: no-repeat;
+	       background-size: 100% 88vh;
+		}
+		.header{
+			background-color: white;
+			width: 100%;
+			height: 10vh;
+		}
+		.logo{
+			height: 8vh;
+			width: 8%;
+		}
+		li{
+			word-spacing: 15px;
+			display: inline-flex;
+			position: relative;
+			margin-left: 300px;
+			
+		}
+		.logo1{
+			height: 4vh;
+			width: 3%;
+			position: absolute;
+			top:15px;
+			right: 100px;
+		}
+		.logo2{
+			height: 4vh;
+			width: 3%;
+			position: absolute;
+			top: 15px;
+			right: 50px;
+		}
+		#one{
+			background: black;
+			color: white;
+			top: 400px;
+			left: 8px;
+			width: 15%;
+			height: 30px;
+			position: absolute;
+			text-align: center;
+		}
+		.main-bar{
+			display: flex;
+		}
+		.main-bar-para{
+			 width: 100%;
+	         height: 20vh;
+			background-color: darkgrey;
+			margin-top: 34%;
+			text-align: center;
+		}
+		.parent{
+			background-color: lightgrey;
+		}
+		
+		h2{
+			color: black;
+		}
+		.footer{
+			display: flex;
+		}
+		.child{
+			position: relative;
+			left: 70px;
+			right: 90px;
+		}
+		.rooms,.dining,.pools{
+			width: 95%;
+			height: 40vh;
+		}
+		#room-heading{
+			text-align: left;
+		}
+		#dining-heading{
+			text-align: center;
+		}
+		#pool-heading{
+			text-align: right;
+		}
+		#btn{
+			background-color: black;
+			color: white;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+		}
+		/*css for tablets*/
+		@media(max-width: 760px){
+			nav{
+				flex-direction: column
+			}
+			.body{
+           margin-right: 0;
+           margin-bottom: 90px;
+			}
+			ul{
+				flex-direction: column;
+				gap: 10px;
+			}
+			ul li{
+				margin-right: 0;
+			}
+			#btn{
+				font-size: 20px;
+				padding: 8px;
+			}
+		}
+		/*css for phone*/
